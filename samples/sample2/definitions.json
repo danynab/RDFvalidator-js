@@ -1,0 +1,30 @@
+{
+  "prefixes": {
+    "": "http://example.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": [{
+    "name": "user",
+    "rules": {
+      "foaf:name": {
+        "type": "xsd:string",
+        "maxOccurs": 1,
+        "minOccurs": 0
+      },
+      "foaf:givenName": {
+        "type": "xsd:string",
+        "minOccurs": 0
+      },
+      "foaf:familyName": {
+        "type": "xsd:string",
+        "maxOccurs": 1,
+        "minOccurs": 0
+      },
+      "foaf:mbox": {
+        "type": "IRI",
+        "maxOccurs": 1
+      }
+    }
+  }]
+}

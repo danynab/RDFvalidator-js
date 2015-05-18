@@ -1,0 +1,28 @@
+{
+  "prefixes": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": [{
+    "name": "user",
+    "type": "foaf:Person",
+    "rules": {
+      "foaf:name": {
+        "type": "xsd:string"
+      },
+      "foaf:age": {
+        "type": "xsd:integer",
+        "maxOccurs": 1,
+        "minOccurs": 0,
+        "regex": "^[1-9][0-9]*$"
+      }
+    }
+  }, {
+    "name": "client",
+    "rules": {
+      "foaf:name": {
+        "type": "xsd:string"
+      }
+    }
+  }]
+}

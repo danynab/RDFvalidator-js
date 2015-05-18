@@ -1,0 +1,16 @@
+@prefix : <http://example.org/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+:Bob
+  rdf:type foaf:Person ;
+  foaf:name "Bob Smith" ;
+  foaf:age 32 .
+
+:Thompson.J
+  a foaf:Person ;
+  foaf:name "Joe Thompson", "J.T." ;
+  foaf:age 21 .
+
+:Maria
+  foaf:name "Maria Fernandez" .
