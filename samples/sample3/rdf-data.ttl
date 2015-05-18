@@ -1,1 +1,1 @@
-@prefix : <http://example.org/>.@prefix foaf: <http://xmlns.com/foaf/0.1/>.:Bob  foaf:name "Tom Smith" ;  foaf:mbox 23 .:Anna  foaf:givenName "Anna" ;  foaf:mbox <mail:ana@uniovi.es> .
+@prefix : <http://example.org/>.@prefix foaf: <http://xmlns.com/foaf/0.1/>.:Anna  foaf:givenName "Anna" ;  foaf:mbox <mail:ana@uniovi.es> .# NO DEFINITION because the email (mbox) is not valid.:Bob   foaf:name "Tom Smith" ;  foaf:mbox 23 . 

@@ -1,0 +1,26 @@
+{
+  "prefixes": {
+    "": "http://example.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": [{
+    "name": "contact",
+    "rules": {
+      ":phoneModel": {
+        "type": "xsd:string",
+        "minOccurs": 0,
+        "maxOccurs": 1
+      },
+      "foaf:name": {
+        "type": "xsd:string",
+        "minOccurs": 0
+      },
+      "foaf:phone": {
+        "type": "xsd:string",
+        "maxOccurs": 1,
+        "regex": "^[0-9]{9}$"
+      }
+    }
+  }]
+}

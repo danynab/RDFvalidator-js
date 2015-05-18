@@ -1,0 +1,21 @@
+@prefix : <http://example.org/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+:Jack
+  foaf:name "Jack Black", "J.B" ;
+  :phoneModel "HTC" ;
+  foaf:phone "612949458" .
+
+:Paul
+  foaf:name "Paul Fox" ;
+  foaf:phone "610999234" .
+
+:Unknow
+  :phoneModel "Samsung" ;
+  foaf:phone "612349856" .
+
+ # NO DEFINITION because the phone is not valid.
+:John
+  foaf:name "John Walker" ;
+  foaf:phone "61099" .
